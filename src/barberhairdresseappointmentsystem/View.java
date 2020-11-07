@@ -7,7 +7,7 @@ import javax.swing.JPanel;
 
 public class View extends JFrame {
 
-    // Teext fields must be class members so all methods can access them
+    // Text fields must be class members so all methods can access them
     Controller controller;
 
     public View(Controller controller) {
