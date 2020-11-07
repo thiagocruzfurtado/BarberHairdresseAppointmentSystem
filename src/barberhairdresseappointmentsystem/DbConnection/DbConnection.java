@@ -9,7 +9,7 @@ import java.sql.Statement;
 
 /**
  *
- * @author Thiago Handle database connection Create a connection execute
+ * @author Thiago and Carlos Handle database connection Create a connection execute
  * query/commands and close all related objects
  */
 public class DbConnection {
