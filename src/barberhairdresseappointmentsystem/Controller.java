@@ -21,7 +21,7 @@ public class Controller implements ActionListener{
     
     /**
      *
-     * @param e
+     * @paaram e
      */
     @Override
     public void actionPerformed(ActionEvent e) {
