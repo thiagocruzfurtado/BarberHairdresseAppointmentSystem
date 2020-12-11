@@ -98,9 +98,9 @@ public class WelcomeScreen extends JFrame {
         jPanel.add(providersLabel);
         jPanel.add(providerLoginJButton);
         jPanel.add(providerRegistrationJButton);
-
+        //set welcome page
         add(jPanel, BorderLayout.CENTER);
-        setTitle("Please Login Here !");
+        setTitle("Welcome Please Login/Register Here");
         setSize(300,450);
         setVisible(true);
     }
