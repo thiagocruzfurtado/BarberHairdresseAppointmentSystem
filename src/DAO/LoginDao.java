@@ -22,7 +22,7 @@ public class LoginDao {
 
             ResultSet rs = pStmt.executeQuery();
             while (rs.next()){
-                fetchedCustomer = new Customer(rs.getString("fullName"),rs.getString("email"),rs.getString("mobile"),rs.getString("password"),rs.getString("location"));
+                fetchedCustomer = new Customer(rs.getInt("id"),rs.getString("fullName"),rs.getString("email"),rs.getString("mobile"),rs.getString("password"),rs.getString("location"));
             }
             pStmt.close();
         } catch (SQLException e) {
@@ -45,7 +45,7 @@ public class LoginDao {
             pStmt.setString(2, serviceProvider.getPassword());
             ResultSet rs = pStmt.executeQuery();
             while (rs.next()){
-                fetchedServiceProvider = new ServiceProvider(rs.getString("fullName"),rs.getString("location"),rs.getString("mobile"));
+                fetchedServiceProvider = new ServiceProvider(rs.getInt("id"),rs.getString("fullName"),rs.getString("location"),rs.getString("mobile"));
             }
             pStmt.close();
         } catch (SQLException e) {

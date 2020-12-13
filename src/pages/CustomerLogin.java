@@ -9,7 +9,8 @@ import java.awt.event.ActionListener;
 
 public class CustomerLogin extends JFrame {
     private JLabel miniTitleForm,usernameLabel,passwordLabel;
-    private JTextField usernameTextField,passwordTextField;
+    private JTextField usernameTextField;
+    private JPasswordField passwordTextField;
     private JButton loginButton;
     private Customer loginCustomer;
 
@@ -27,7 +28,7 @@ public class CustomerLogin extends JFrame {
         usernameLabel = new JLabel();
         passwordLabel = new JLabel();
         usernameTextField = new JTextField();
-        passwordTextField = new JTextField();
+        passwordTextField = new JPasswordField();
         loginButton = new JButton();
 
 //        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
@@ -46,7 +47,6 @@ public class CustomerLogin extends JFrame {
 //            }
 //        });
 
-        passwordLabel.setFont(new java.awt.Font("Ubuntu", 1, 18)); // NOI18N
         passwordLabel.setText("Password");
 
         passwordTextField.setFont(new java.awt.Font("Ubuntu", 1, 18)); // NOI18N

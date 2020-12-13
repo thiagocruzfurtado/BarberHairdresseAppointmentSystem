@@ -1,11 +1,17 @@
 package models;
 
 public class ServiceProvider {
+    private Integer id;
     private String name,email,mobile,password,location;
 
     public ServiceProvider(String email, String password) {
         this.email = email;
         this.password = password;
+    }
+
+    public ServiceProvider(Integer id, String name) {
+        this.id = id;
+        this.name = name;
     }
 
     public ServiceProvider(String name, String email, String mobile, String password) {
@@ -15,10 +21,19 @@ public class ServiceProvider {
         this.password = password;
     }
 
-    public ServiceProvider(String name, String location, String mobile) {
+    public ServiceProvider(Integer id, String name, String location, String mobile) {
+        this.id = id;
         this.name = name;
         this.location = location;
         this.mobile = mobile;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
     
     public String getEmail() {

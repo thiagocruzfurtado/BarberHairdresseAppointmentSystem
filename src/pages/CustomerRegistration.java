@@ -92,7 +92,7 @@ public class CustomerRegistration
 
 
         add(panel, BorderLayout.CENTER);
-        setTitle("Please Login Here !");
+        setTitle("Welcome Please Login/Register here");
         setSize(450,350);
         setVisible(true);
     }

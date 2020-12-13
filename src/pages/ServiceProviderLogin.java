@@ -9,7 +9,8 @@ import java.awt.event.ActionListener;
 
 public class ServiceProviderLogin extends JFrame {
     private JLabel miniTitleForm,usernameLabel,passwordLabel;
-    private JTextField usernameTextField,passwordTextField;
+    private JTextField usernameTextField;
+    private JPasswordField passwordTextField;
     private JButton loginButton;
 
 
@@ -26,10 +27,9 @@ public class ServiceProviderLogin extends JFrame {
         usernameLabel = new JLabel();
         passwordLabel = new JLabel();
         usernameTextField = new JTextField();
-        passwordTextField = new JTextField();
+        passwordTextField = new JPasswordField();
         loginButton = new JButton();
 
-//        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
         miniTitleForm.setFont(new java.awt.Font("Ubuntu", 1, 36)); // NOI18N
@@ -42,23 +42,11 @@ public class ServiceProviderLogin extends JFrame {
 
         usernameTextField.setFont(new java.awt.Font("Ubuntu", 1, 18)); // NOI18N
         usernameTextField.setHorizontalAlignment(SwingConstants.CENTER);
-//        usernameTextField.addActionListener(new java.awt.event.ActionListener() {
-//            public void actionPerformed(java.awt.event.ActionEvent evt) {
-//                TextUsuarioActionPerformed(evt);
-//            }
-//        });
 
         passwordLabel.setFont(new java.awt.Font("Ubuntu", 1, 18)); // NOI18N
         passwordLabel.setHorizontalAlignment(SwingConstants.CENTER);
         passwordLabel.setText("Password");
 
-        passwordTextField.setFont(new java.awt.Font("Ubuntu", 1, 18)); // NOI18N
-        passwordTextField.setHorizontalAlignment(SwingConstants.CENTER);
-//        passwordTextField.addActionListener(new java.awt.event.ActionListener() {
-//            public void actionPerformed(java.awt.event.ActionEvent evt) {
-//                TextSenhaActionPerformed(evt);
-//            }
-//        });
 
         loginButton.setBackground(new java.awt.Color(164, 152, 152));
         loginButton.setFont(new java.awt.Font("Ubuntu", 1, 18)); // NOI18N
@@ -66,11 +54,6 @@ public class ServiceProviderLogin extends JFrame {
         loginButton.setText("Login");
         loginButton.setActionCommand("ButtonEntrar");
         loginButton.setHorizontalAlignment(SwingConstants.CENTER);
-//        loginButton.addActionListener(new java.awt.event.ActionListener() {
-//            public void actionPerformed(java.awt.event.ActionEvent evt) {
-//                ButtonEntrarActionPerformed(evt);
-//            }
-//        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
